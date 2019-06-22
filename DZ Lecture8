@@ -1,1 +1,51 @@
+function convert(amount) {
+let dollar = amount*8;
+return dollar
+ }
+const convert2 = amount => amount*8;
 
+function reverse(str) {
+return str.split('').reverse().join('');
+}
+function printStairs(n) {  
+     if (n < 1) {
+   let RezStr = 'nothing)))';
+   console.log(RezStr);
+     } else {
+        RezStr = '';
+    for (let i=1; i<=n; i++) {
+    RezStr=RezStr+'#';
+    console.log(RezStr)
+     }
+  }
+ }
+ function sumRange(start, end) { 
+  let Sum = 0;
+  for (let i=start; i<=end; i++)
+      Sum +=i;
+      return Sum; 
+  }
+  function min(a, b, c) { 
+      return Math.min(a,b,c)
+   }
+   function printPyramid(n) {  
+     if (n < 1) {
+    let RezStr = 'nothing)))';
+    console.log(RezStr);
+     } else {
+        RezStr = '';
+     //   RezStr = RezStr*(n-1)+'#';
+        console.log(RezStr);
+    for (let i=2; i<=n; i++) {
+    RezStr=RezStr+'##';
+    console.log(RezStr)
+     }
+  }
+ }
+ function firstAndLastToUpper(str) { 
+    
+    return str[0].toUpperCase()+str.toLowerCase().slice(1,-1)+str[str.length-1].toUpperCase();
+      }
+      
+   
+ 
