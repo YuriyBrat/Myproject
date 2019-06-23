@@ -61,7 +61,22 @@ function printStairs(n) {
  function toUppercase (text) {
     return  text.toUpperCase();
 }
-
+function removeDuplicationLetters(str) { 
+for (let i=0; i<str.length; i++) {
+  //  for (let j=str.length; j>i+1; j--) {
+  for (let j=i+1; j<str.length; j++) {
+      if(str[j]!=' ') {
+    if (str[j]==str[i]) 
+  //  str=str.slice(0,j)+str.slice(j,-1)
+  str = str.replace(str[j],"");
+  console.log(str)
+      }
+  }
+}
+console.log(str)
+}
+//результат при 'Hello I am Iron Man': Hel  m Iro Man
+//має бути: 'Helo I am rn '  чомусь видаляє при іншому порядку((
 
 
    
