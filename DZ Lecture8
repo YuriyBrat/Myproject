@@ -58,8 +58,12 @@ function printStairs(n) {
  function cursorCheckN(str) {
      return (/ostap|cursor|ironman/.test(str.toLowerCase()));
  }
- function toUppercase (text) {
-    return  text.toUpperCase();
+ function toUppercaseNew (text) {
+    for (i=0; i<text.length; i++) {
+    text = text.replace(text[i],String.fromCharCode(text.charCodeAt(i)-32));
+    //console.log(text) так слідкували за ітерацією
+    }
+    return text
 }
 function removeDuplicationLetters(str) { 
 for (let i=0; i<str.length; i++) {
