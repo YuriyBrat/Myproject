@@ -54,6 +54,10 @@ function printStairs(n) {
   //  console.log(str.indexOf('ostap'));
   //  console.log(str);
  }
+ // знизу простіший варіант
+ function cursorCheckN(str) {
+     return (/ostap|cursor|ironman/.test(str.toLowerCase()));
+ }
  function toUppercase (text) {
     return  text.toUpperCase();
 }
