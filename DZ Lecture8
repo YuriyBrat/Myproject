@@ -76,7 +76,20 @@ console.log(str)
 }
 //результат при 'Hello I am Iron Man': Hel  m Iro Man
 //має бути: 'Helo I am rn '  чомусь видаляє при іншому порядку((
-
+function fibonacci(n) { 
+   let fArr = 0;
+    if (n==1 || n==2) 
+  fArr = 1;
+  //  else
+  if (n>2) 
+    fArr =[1,1];
+      for (let i=2; i<n; i++) {
+        fArr.push(fArr[i-2]+fArr[i-1])
+  } 
+  // else nFib =0;
+  console.log(fArr[n-1]);
+ // console.log(fArr)
+}
 
    
  
