@@ -104,6 +104,10 @@ for (let i=n; i>0; i--) {
   console.log(pirSumN);
    }
  }
+ Задача7
+ function firstAndLastToUpperNew(str) {
+   return str[0].toUpperCase()+str.slice(1,-1)+str[str.length-1].toUpperCase();
+ }
  
    
  
