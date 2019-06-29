@@ -94,6 +94,16 @@ function fibonacci(n) {
   console.log(fArr[n-1]);
  // console.log(fArr)
 }
+Редагування та виправлення помилок!
+Задача6
 
+function printPyramidNew(n) { 
+let pirSum = "#";
+for (let i=n; i>0; i--) {
+  pirSumN = new Array(i).join(" ")+new Array(2*(n-i)+2).join("#");
+  console.log(pirSumN);
+   }
+ }
+ 
    
  
